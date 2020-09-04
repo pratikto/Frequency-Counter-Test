@@ -42,10 +42,10 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "250.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "100.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -102,10 +102,10 @@
             "value": "667"
           },
           "PCW_CLK0_FREQ": {
-            "value": "50000000"
+            "value": "250000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "100000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -173,6 +173,9 @@
           "PCW_EN_4K_TIMER": {
             "value": "0"
           },
+          "PCW_EN_CLK1_PORT": {
+            "value": "1"
+          },
           "PCW_EN_ENET0": {
             "value": "1"
           },
@@ -191,7 +194,19 @@
           "PCW_EN_USB0": {
             "value": "1"
           },
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "250"
+          },
+          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "100"
+          },
           "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
@@ -204,6 +219,9 @@
             "value": "0"
           },
           "PCW_I2C_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_IRQ_F2P_INTR": {
             "value": "1"
           },
           "PCW_IRQ_F2P_MODE": {
@@ -1021,6 +1039,9 @@
           },
           "PCW_USE_CROSS_TRIGGER": {
             "value": "0"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
