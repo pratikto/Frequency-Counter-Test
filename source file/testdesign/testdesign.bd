@@ -19,7 +19,8 @@
         "m01_couplers": {}
       },
       "rst_ps7_0_250M": "",
-      "xlconcat_0": ""
+      "xlconcat_0": "",
+      "clk_wiz_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -29,6 +30,32 @@
       "FIXED_IO": {
         "mode": "Master",
         "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
+      }
+    },
+    "ports": {
+      "SCLR": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "gate": {
+        "direction": "I"
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
       }
     },
     "components": {
@@ -1466,6 +1493,18 @@
             "value": "4"
           }
         }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "testdesign_clk_wiz_0_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1561,6 +1600,38 @@
         "ports": [
           "xlconcat_0/dout",
           "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "SCLR_1": {
+        "ports": [
+          "SCLR",
+          "Frequency_Counter_0/SCLR",
+          "Frequency_Counter_1/SCLR"
+        ]
+      },
+      "gate_1": {
+        "ports": [
+          "gate",
+          "Frequency_Counter_0/gate",
+          "Frequency_Counter_1/gate"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK1": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK1",
+          "Frequency_Counter_0/inputSignal"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "Frequency_Counter_1/inputSignal"
         ]
       }
     },
