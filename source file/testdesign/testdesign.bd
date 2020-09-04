@@ -1503,6 +1503,12 @@
           },
           "USE_BOARD_FLOW": {
             "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
           }
         }
       }
