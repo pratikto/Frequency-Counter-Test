@@ -1,27 +1,33 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.592208",
-   "Default View_TopLeft":"-176,-260",
+   "Default View_ScaleFactor":"0.711765",
+   "Default View_TopLeft":"-7,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1210 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1210 -y 80 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 250 -y -50 -defaultsOSRD
-preplace inst Frequency_Counter_0 -pg 1 -lvl 1 -x 250 -y 170 -defaultsOSRD
-preplace inst Frequency_Counter_1 -pg 1 -lvl 1 -x 250 -y 390 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1030 -y -120 -defaultsOSRD
-preplace inst rst_ps7_0_250M -pg 1 -lvl 2 -x 660 -y 60 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 -200 480 -150 880
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 460 10n
-preplace netloc rst_ps7_0_250M_peripheral_aresetn 1 0 3 30 -190 470J -120 860
-preplace netloc processing_system7_0_DDR 1 1 3 NJ -110 840 60 N
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ -90 830 80 N
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 460J -160 830
-preplace netloc ps7_0_axi_periph_M00_AXI 1 0 4 40 -180 490J -140 870J 20 1190
-preplace netloc ps7_0_axi_periph_M01_AXI 1 0 4 50 -170 450J -130 850J 30 1180
-levelinfo -pg 1 0 250 660 1030 1210
-pagesize -pg 1 -db -bbox -sgen 0 -260 1330 680
+preplace port DDR -pg 1 -lvl 5 -x 1260 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1260 -y 80 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 440 -y 120 -defaultsOSRD
+preplace inst Frequency_Counter_0 -pg 1 -lvl 4 -x 1120 -y 310 -defaultsOSRD
+preplace inst Frequency_Counter_1 -pg 1 -lvl 4 -x 1120 -y 550 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 830 -y 260 -defaultsOSRD
+preplace inst rst_ps7_0_250M -pg 1 -lvl 2 -x 440 -y 540 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 120 -y 340 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 230 250 670 400 1000
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 240 440 640
+preplace netloc rst_ps7_0_250M_peripheral_aresetn 1 2 2 680 440 1010
+preplace netloc Frequency_Counter_0_error 1 0 5 20 240 NJ 240 660J 120 NJ 120 1240
+preplace netloc Frequency_Counter_0_ready 1 0 5 30 250 210J 410 NJ 410 980J 190 1230
+preplace netloc Frequency_Counter_1_error 1 0 5 20 430 NJ 430 NJ 430 NJ 430 1230
+preplace netloc Frequency_Counter_1_ready 1 0 5 30 670 NJ 670 NJ 670 NJ 670 1230
+preplace netloc xlconcat_0_dout 1 1 1 220 130n
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 650 120n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 250
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 990 270n
+levelinfo -pg 1 0 120 440 830 1120 1260
+pagesize -pg 1 -db -bbox -sgen 0 0 1380 680
 "
 }
 {

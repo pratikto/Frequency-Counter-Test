@@ -18,7 +18,8 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "rst_ps7_0_250M": ""
+      "rst_ps7_0_250M": "",
+      "xlconcat_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1456,6 +1457,15 @@
       "rst_ps7_0_250M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "testdesign_rst_ps7_0_250M_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "testdesign_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1521,6 +1531,36 @@
           "Frequency_Counter_0/s00_axi_aresetn",
           "ps7_0_axi_periph/M01_ARESETN",
           "Frequency_Counter_1/s00_axi_aresetn"
+        ]
+      },
+      "Frequency_Counter_0_error": {
+        "ports": [
+          "Frequency_Counter_0/error",
+          "xlconcat_0/In0"
+        ]
+      },
+      "Frequency_Counter_0_ready": {
+        "ports": [
+          "Frequency_Counter_0/ready",
+          "xlconcat_0/In1"
+        ]
+      },
+      "Frequency_Counter_1_error": {
+        "ports": [
+          "Frequency_Counter_1/error",
+          "xlconcat_0/In2"
+        ]
+      },
+      "Frequency_Counter_1_ready": {
+        "ports": [
+          "Frequency_Counter_1/ready",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },
