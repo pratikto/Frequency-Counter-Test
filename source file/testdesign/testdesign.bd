@@ -56,6 +56,14 @@
             "value": "0.000"
           }
         }
+      },
+      "external_clock": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "processor_clock": {
+        "type": "clk",
+        "direction": "O"
       }
     },
     "components": {
@@ -1625,7 +1633,8 @@
       "processing_system7_0_FCLK_CLK1": {
         "ports": [
           "processing_system7_0/FCLK_CLK1",
-          "Frequency_Counter_0/inputSignal"
+          "Frequency_Counter_0/inputSignal",
+          "processor_clock"
         ]
       },
       "sys_clock_1": {
@@ -1637,7 +1646,8 @@
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "Frequency_Counter_1/inputSignal"
+          "Frequency_Counter_1/inputSignal",
+          "external_clock"
         ]
       }
     },
